@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/b6347db056.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  </head>
+
+  <body> 
+  <nav>
+    <ul class="menu">
+      <li class="logo"><a href="#">Creative Mind Agency</a></li>
+      <li class="item"><a href="#">Home</a></li>
+      <li class="item"><a href="#">About</a></li>
+      <li class="item has-submenu">
+        <a tabindex="0">Services</a>
+        <ul class="submenu">
+          <li class="subitem"><a href="#">Design</a></li>
+          <li class="subitem"><a href="#">Front-End</a></li>
+          <li class="subitem"><a href="#">Back-End</a></li>
+          <li class="subitem"><a href="#">Copywriting</a></li>
+        </ul>
+      </li>
+
+      <li class="item has-submenu">
+        <a tabindex="0">Level</a>
+        <ul class="submenu">
+          <li class="subitem"><a href="#">Junior</a></li>
+          <li class="subitem"><a href="#">Medium</a></li>
+          <li class="subitem"><a href="#">Senior</a></li>
+          <li class="subitem"><a href="#">Freelancer</a></li>
+        </ul>
+      </li>
+
+      <li class="item"><a href="#">Contact</a></li>
+      <li class="item"><button class="signup-btn"><a href="#">Sign up</a></button>
+      </li>
+      <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="login-container">
+      <div class="profile-pic">
+        <i class="fa-regular fa-circle-user"></i>
+      </div>
+      <form autocomplete="on" id="input-form">
+        <div class="input-group">
+          <i class="fas fa-user"></i>
+          <input type="text" id="username" placeholder="Username" required>
+        </div>
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <input type="password" id="password" placeholder="Password" required>
+          <i class="fas fa-eye-slash toggle-password" id="togglePassword"></i>
+        </div>
+        <button type="submit" class="login-btn">Login</button>
+        <div class="options">
+          <label><input type="checkbox"> Keep Me Signed In</label>
+          <a href="#">Forgot your password?</a>
+        </div>
+      </form>
+    </div>
+  
+    <div class="welcome-section">
+      <h1>Welcome to our platform.</h1>
+      <p>Explore exciting features and connect with a vibrant community. Remember, you can always connect with your social media!</p>
+      <div class="social-media">
+        <i class="fa-brands fa-google"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-apple"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-tiktok"></i>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
